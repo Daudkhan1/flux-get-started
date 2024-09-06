@@ -27,7 +27,7 @@ fluxctl install \
 --git-path=namespace,workloads \
 --namespace=flux | kubectl apply -f -
 
-# check rollout status
+# check rollout status --
 kubectl -n flux rollout status deployment/flux
 # Giving write access
 fluxctl identity --k8s-fwd-ns flux
