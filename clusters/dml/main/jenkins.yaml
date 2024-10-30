@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: jenkinsdeployment
-  replicas: 1
+  replicas: 5
   template:
     metadata:
       labels:
