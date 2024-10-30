@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: httpddeployment
-        image: alpine:latest
+        image: nginx:latest
         ports:
         - containerPort: 80
