@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins-deployment
+  namespace: default
+  flux-system: 
+spec:
+  selector:
+    matchLabels:
+      app: jenkinsdeployment
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: jenkinsdeployment
+    spec:
+      containers:
+      - name: jenkinsdeployment
+        image: nginx:latest
+        ports:
+        - containerPort: 80
