@@ -88,5 +88,5 @@ flux bootstrap github \
   --owner=Daudkhan1 \
   --repository=flux-get-started \
   --branch=main \
-  --path=clusters/my-cluster \
+  --path=./clusters/dml \
   --personal
