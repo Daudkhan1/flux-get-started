@@ -24,7 +24,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-service
-  namespace: flux-system
+  namespace: dafault
 spec:
   type: NodePort
   selector:
