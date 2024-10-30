@@ -78,3 +78,15 @@ git push
 
 flux get kustomizations --watch
 kubectl -n default get deployments,services
+
+
+
+
+
+flux bootstrap github \
+  --token-auth \
+  --owner=Daudkhan1 \
+  --repository=flux-get-started \
+  --branch=main \
+  --path=clusters/my-cluster/flux-system \
+  --personal
